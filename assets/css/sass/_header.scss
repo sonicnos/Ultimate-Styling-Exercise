@@ -1,0 +1,40 @@
+@import '02-variables';
+@import '03-mixin';
+
+header {
+    .container {
+        padding-top: 30px;
+        @include FlexAllCenter;
+        @include MarginHeader;
+
+        .logo {
+            a {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 2rem;
+                span {
+                    color: $red;
+                }
+            }
+
+        } 
+
+        .navigation {
+
+            ul {
+                @include FlexAllCenter();
+                gap: 30px;
+
+                li {
+
+                    a {
+                        color: $white;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

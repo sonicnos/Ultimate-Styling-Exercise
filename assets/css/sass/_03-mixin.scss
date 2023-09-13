@@ -1,0 +1,26 @@
+@mixin MarginHeader {
+    max-width: 1200px;
+    margin-left: 125px;
+}
+
+@mixin FlexAllCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+@mixin btn {
+    border: none;
+    border-radius: 75px;
+    width: 152px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.63px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+@import '01-config';
+@import 'header';
+@import 'awesome-title';
+
+body {
+    font-family: 'Barlow', sans-serif;
+    height: 100vh;
+    background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
+}

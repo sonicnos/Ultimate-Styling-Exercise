@@ -1,0 +1,81 @@
+@import '02-variables';
+@import '03-mixin';
+
+.awesome-article{
+    @include MarginHeader;
+    margin-top: 116px;
+    width: 510px;
+    height: 324px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        .title {
+            color: $white;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2.88px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: $yellow;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 1.44px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            padding-left: 4px;
+            width: 410px;
+            color: #EFEFEF;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+
+            .red-btn {
+                @include btn;
+                background-color: $red;
+                color: $white;  
+            }
+
+            .white-btn {
+                @include btn;
+                background-color: #EFEFEF;
+            }
+        }
+    }
+}
+
+.awesome-article::before {
+    content: "";
+    display: block;
+    width: 142px;
+    height: 153px;
+    background-image: url(/assets/image/deco3-1.png);
+    position: absolute;
+    top: 137px;
+    left: 82px;
+}
+
+.awesome-article::after {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 181px;
+    background-image: url(/assets/image/deco2.png);
+    position: absolute;
+    top: 400px;
+    left: 409px;
+}
