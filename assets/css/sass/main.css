@@ -14,12 +14,13 @@ ul {
 }
 
 header .container {
+  position: relative;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin-left: 125px;
+  margin: 0 auto;
 }
 header .container .logo a {
   color: white;
@@ -41,18 +42,27 @@ header .container .navigation ul li a {
   font-size: 0.875rem;
   font-weight: 400;
 }
+header .container .navigation::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 730px;
+  height: 747px;
+  background-image: url(/assets/image/deco1.png);
+  top: -114px;
+  left: 729px;
+}
 
 .awesome-article {
-  max-width: 1200px;
-  margin-left: 125px;
-  margin-top: 116px;
-  width: 510px;
-  height: 324px;
+  padding-top: 120px;
 }
 .awesome-article .container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 23px;
+  position: relative;
 }
 .awesome-article .container .title {
   color: #FFF;
@@ -77,13 +87,13 @@ header .container .navigation ul li a {
   line-height: 32px;
   letter-spacing: 0.72px;
 }
-.awesome-article .container .btn {
+.awesome-article .container ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 25px;
 }
-.awesome-article .container .btn .red-btn {
+.awesome-article .container ul .red-btn {
   border: none;
   border-radius: 75px;
   width: 152px;
@@ -97,10 +107,11 @@ header .container .navigation ul li a {
   letter-spacing: 0.63px;
   text-transform: uppercase;
   cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #E6606C;
   color: #FFF;
 }
-.awesome-article .container .btn .white-btn {
+.awesome-article .container ul .white-btn {
   border: none;
   border-radius: 75px;
   width: 152px;
@@ -114,33 +125,152 @@ header .container .navigation ul li a {
   letter-spacing: 0.63px;
   text-transform: uppercase;
   cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #EFEFEF;
+  color: #000;
 }
-
-.awesome-article::before {
+.awesome-article .container::before {
   content: "";
   display: block;
+  position: absolute;
   width: 142px;
   height: 153px;
   background-image: url(/assets/image/deco3-1.png);
-  position: absolute;
-  top: 137px;
-  left: 82px;
+  top: -47px;
+  left: -44px;
 }
-
-.awesome-article::after {
+.awesome-article .container::after {
   content: "";
   display: block;
+  position: absolute;
   width: 184px;
   height: 181px;
   background-image: url(/assets/image/deco2.png);
+  top: 214px;
+  left: 306px;
+}
+
+.lorem .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 145px;
+  margin-top: 246px;
+}
+.lorem .container .lorem-article {
+  position: relative;
+}
+.lorem .container .lorem-article h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.lorem .container .lorem-article .title {
+  color: #FFF;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  width: 450px;
+  margin-bottom: 30px;
+}
+.lorem .container .lorem-article .title2 {
+  color: #FFF;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 28px;
+}
+.lorem .container .lorem-article .description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 28px;
+}
+.lorem .container .lorem-article .red-btn {
+  border: none;
+  border-radius: 75px;
+  width: 152px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #E6606C;
+  color: #FFF;
+}
+.lorem .container .lorem-article::before {
+  content: "";
+  display: block;
   position: absolute;
-  top: 400px;
-  left: 409px;
+  width: 210px;
+  height: 210px;
+  background-image: url(/assets/image/Ellipse.svg);
+  top: 73px;
+  left: 297px;
+}
+
+.ipsum .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ipsum .container h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.ipsum .container .title {
+  color: #FFF;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.ipsum .container .description {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  width: 570px;
+}
+.ipsum .container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ipsum .container .nov-27 {
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
 }
 
 body {
   font-family: "Barlow", sans-serif;
-  height: 100vh;
+  min-height: 100%;
   background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
 }/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,11 @@
 @import '01-config';
 @import 'header';
 @import 'awesome-title';
+@import 'lorem';
+@import 'ipsum';
 
 body {
     font-family: 'Barlow', sans-serif;
-    height: 100vh;
+    min-height: 100%;
     background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
 }

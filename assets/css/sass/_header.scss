@@ -3,9 +3,11 @@
 
 header {
     .container {
+        position: relative;
         padding-top: 30px;
         @include FlexAllCenter;
         @include MarginHeader;
+        
 
         .logo {
             a {
@@ -36,5 +38,17 @@ header {
                 }
             }
         }
+        .navigation::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 730px;
+            height: 747px;
+            background-image: url(/assets/image/deco1.png);
+            top: -114px;
+            left: 729px;
+        }
     }
+
+
 }
