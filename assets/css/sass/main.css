@@ -21,6 +21,7 @@ header .container {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 header .container .logo a {
   color: white;
@@ -42,11 +43,11 @@ header .container .navigation ul li a {
   font-size: 0.875rem;
   font-weight: 400;
 }
-header .container .navigation::after {
+header .container body::before {
   content: "";
   display: block;
   position: absolute;
-  width: 730px;
+  width: 100%;
   height: 747px;
   background-image: url(/assets/image/deco1.png);
   top: -114px;
@@ -159,6 +160,9 @@ header .container .navigation::after {
   gap: 145px;
   margin-top: 246px;
 }
+.lorem .container .pic1 img {
+  width: 100%;
+}
 .lorem .container .lorem-article {
   position: relative;
 }
@@ -227,10 +231,17 @@ header .container .navigation::after {
 }
 
 .ipsum .container {
+  padding-top: 73px;
   max-width: 1200px;
   margin: 0 auto;
 }
-.ipsum .container h3 {
+.ipsum .container .content {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+.ipsum .container .content h3 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1rem;
   font-style: normal;
@@ -241,7 +252,7 @@ header .container .navigation::after {
   text-align: center;
   margin-bottom: 16px;
 }
-.ipsum .container .title {
+.ipsum .container .content .title {
   color: #FFF;
   font-size: 3.5rem;
   font-style: normal;
@@ -250,7 +261,7 @@ header .container .navigation::after {
   text-align: center;
   margin-bottom: 32px;
 }
-.ipsum .container .description {
+.ipsum .container .content .description {
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -260,17 +271,213 @@ header .container .navigation::after {
   line-height: 32px;
   width: 570px;
 }
+.ipsum .container .content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 142px;
+  height: 153px;
+  background-image: url(/assets/image/deco3-1.png);
+  top: -13px;
+  left: -38px;
+}
 .ipsum .container .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 70px;
 }
 .ipsum .container .nov-27 {
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
+  background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+  box-shadow: 0px 24px 48px 0px rgba(0, 1, 44, 0.16);
+}
+.ipsum .container .nov-27 img {
+  width: 100%;
+}
+.ipsum .container .nov-27 h2 {
+  margin-top: 38px;
+  padding-left: 30px;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.ipsum .container .nov-27 p {
+  margin-top: 20px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.ipsum .container .nov-25 {
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+  box-shadow: 0px 24px 48px 0px rgba(0, 1, 44, 0.16);
+}
+.ipsum .container .nov-25 img {
+  width: 100%;
+}
+.ipsum .container .nov-25 h2 {
+  margin-top: 38px;
+  padding-left: 30px;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.ipsum .container .nov-25 p {
+  margin-top: 20px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.ipsum .container .nov-21 {
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+  box-shadow: 0px 24px 48px 0px rgba(0, 1, 44, 0.16);
+}
+.ipsum .container .nov-21 img {
+  width: 100%;
+}
+.ipsum .container .nov-21 h2 {
+  margin-top: 38px;
+  padding-left: 30px;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.ipsum .container .nov-21 p {
+  margin-top: 20px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.footer .container {
+  padding-top: 115px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .logo a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.footer .container .logo a span {
+  color: #E6606C;
+}
+.footer .top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 180px;
+}
+.footer .top .menu h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.footer .top .menu ul li a {
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.footer .top .service h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.footer .top .service ul li a {
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.footer .top .icons {
+  display: flex;
+  gap: 8px;
+}
+.footer .top .icons .icon {
+  background-color: #6357F6;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+}
+.footer .line {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2549019608);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .bottom .copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.footer .links {
+  display: flex;
+  gap: 48px;
+}
+.footer .links a {
+  color: #FFF;
+  text-align: right;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 body {
   font-family: "Barlow", sans-serif;
   min-height: 100%;
   background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 747px;
+  background-image: url(/assets/image/deco1.png);
+  background-repeat: no-repeat;
+  top: -114px;
+  left: 729px;
 }/*# sourceMappingURL=main.css.map */
