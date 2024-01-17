@@ -14,7 +14,7 @@
         .top {
             display: flex;
             justify-content: flex-start;
-            gap: 180px;
+            gap: 11.25rem;
 
             .menu {
                 @include ListFooter;
@@ -26,7 +26,7 @@
     
             .icons {
                 display: flex;
-                gap: 8px;
+                gap: 0.5rem;
     
                 .icon {
                     background-color: #6357F6;
@@ -63,7 +63,7 @@
 
         .links {
             display: flex;
-            gap: 48px;
+            gap: 3rem;
             a{
                 color: #FFF;
                 text-align: right;

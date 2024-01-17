@@ -6,13 +6,13 @@
     padding-top: 120px;
 
     .container {
-        @include MarginHeader;
         display: flex;
         flex-direction: column;
-        gap: 23px;
+        gap: 1.4375rem;
         position: relative;
 
         .title {
+            position: relative;
             color: $white;
             font-size: 4rem;
             font-weight: 300;
@@ -57,7 +57,20 @@
             }
         }
     }
-    .container::before {
+    .container::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 60.8%;
+        height: 747px;
+        background-image: url(/assets/image/deco1.png);
+        background-repeat: no-repeat;
+        top: -243px;
+        left: 729px;
+        overflow: hidden;
+    }
+
+    .title::before {
         content: "";
         display: block;
         position: absolute;
@@ -68,7 +81,7 @@
         left: -44px;
     }
     
-    .container::after {
+    .title::after {
         content: "";
         display: block;
         position: absolute;

@@ -6,16 +6,14 @@ header {
         position: relative;
         padding-top: 30px;
         @include FlexAllCenter;
-        @include MarginHeader;
         @include Logo;
         overflow: hidden;
 
 
         .navigation {
-
             ul {
                 @include FlexAllCenter();
-                gap: 30px;
+                gap: 1.875rem;
 
                 li {
 
@@ -26,16 +24,6 @@ header {
                     }
                 }
             }
-        }
-        body::before{
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 747px;
-            background-image: url(/assets/image/deco1.png);
-            top: -114px;
-            left: 729px;
         }
     }
 

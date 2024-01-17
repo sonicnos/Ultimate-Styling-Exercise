@@ -19,8 +19,6 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
   overflow: hidden;
 }
 header .container .logo a {
@@ -36,36 +34,25 @@ header .container .navigation ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
 }
 header .container .navigation ul li a {
   color: #FFF;
   font-size: 0.875rem;
   font-weight: 400;
 }
-header .container body::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 747px;
-  background-image: url(/assets/image/deco1.png);
-  top: -114px;
-  left: 729px;
-}
 
 .awesome-article {
   padding-top: 120px;
 }
 .awesome-article .container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 1.4375rem;
   position: relative;
 }
 .awesome-article .container .title {
+  position: relative;
   color: #FFF;
   font-size: 4rem;
   font-weight: 300;
@@ -134,13 +121,25 @@ header .container body::before {
   content: "";
   display: block;
   position: absolute;
+  width: 60.8%;
+  height: 747px;
+  background-image: url(/assets/image/deco1.png);
+  background-repeat: no-repeat;
+  top: -243px;
+  left: 729px;
+  overflow: hidden;
+}
+.awesome-article .title::before {
+  content: "";
+  display: block;
+  position: absolute;
   width: 142px;
   height: 153px;
   background-image: url(/assets/image/deco3-1.png);
   top: -47px;
   left: -44px;
 }
-.awesome-article .container::after {
+.awesome-article .title::after {
   content: "";
   display: block;
   position: absolute;
@@ -284,7 +283,7 @@ header .container body::before {
 .ipsum .container .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 1.875rem;
   margin-top: 70px;
 }
 .ipsum .container .nov-27 {
@@ -388,7 +387,7 @@ header .container body::before {
 .footer .top {
   display: flex;
   justify-content: flex-start;
-  gap: 180px;
+  gap: 11.25rem;
 }
 .footer .top .menu h3 {
   color: rgba(255, 255, 255, 0.5);
@@ -424,7 +423,7 @@ header .container body::before {
 }
 .footer .top .icons {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 .footer .top .icons .icon {
   background-color: #6357F6;
@@ -453,7 +452,7 @@ header .container body::before {
 }
 .footer .links {
   display: flex;
-  gap: 48px;
+  gap: 3rem;
 }
 .footer .links a {
   color: #FFF;
@@ -468,16 +467,6 @@ body {
   font-family: "Barlow", sans-serif;
   min-height: 100%;
   background: linear-gradient(237deg, #2C2D65 0.35%, #201F22 100%);
-}
-
-body::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 747px;
-  background-image: url(/assets/image/deco1.png);
-  background-repeat: no-repeat;
-  top: -114px;
-  left: 729px;
+  max-width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
